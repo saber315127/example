@@ -35,7 +35,7 @@ def myNetwork():
     host_list = {}
 
     info( '*** Add hosts\n')
-    for i in xrange(1,max_hosts+1):
+    for i in range(1,max_hosts+1):
         host_list[i] = net.addHost('h'+str(i))
         info( '*** Add links between ',host_list[i],' and s1 \r')
         net.addLink(host_list[i], s1)
